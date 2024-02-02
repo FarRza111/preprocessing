@@ -5,7 +5,7 @@ from pydantic import field_validator
 from pydantic import BaseModel, Field
 from pydantic import field_validator, ValidationError
 
-path = r'C:\Users\Z008374\Desktop\data\test_data.csv'
+path = r'C:\Users\Desktop\data\test_data.csv'
 data = pd.read_csv(path,low_memory=False)
 
 class DictValidator(BaseModel):
