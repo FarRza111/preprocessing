@@ -6,6 +6,7 @@ from pydantic import field_validator, ValidationError
 
 # setting the main path
 
+
 path = r'C:\Users\Desktop\data\test_data.csv'
 data = pd.read_csv(path,low_memory=False)
 
