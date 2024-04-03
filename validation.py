@@ -4,7 +4,12 @@ from pydantic import BaseModel, Field
 from typing import Union, List, Dict, Literal, Any
 from pydantic import field_validator, ValidationError
 
+# ------------
+# ============
+# ============
 
+def test_list(list: int):
+    return True, []
 
 path = r'C:\Users\Desktop\data\test_data.csv'
 data = pd.read_csv(path,low_memory=False)
